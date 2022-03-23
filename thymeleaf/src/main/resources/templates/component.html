@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="ch" xmlns:th="http://www.thymeleaf.org">
+<footer th:fragment="com1">
+    <!--/*@thymesVar id="user" type="com.example.thymeleaf.vo.UserVO"*/-->
+    <h2 th:text="${user.username}"></h2>
+com1
+</footer>
+
+<div th:fragment="com2">
+com2
+</div>
+
+<div id="com3">
+    com3
+</div>
+<div th:fragment="com4(message)">
+    <p th:text="${message}"></p>
+</div>
+<div th:fragment="com5(message)">
+    <div th:replace="${message}"></div>
+</div>
+
+</html>
